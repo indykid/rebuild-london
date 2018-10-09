@@ -1,0 +1,53 @@
+/* ******* CAROUSEL start ******* */
+.carousel .slide {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-1 {
+  background-image: url("../images/carousel/christopher-burns-welding-unsplash.jpg");
+}
+
+.slide-2 {
+  background-image: url("../images/carousel/travel-cents-townhouse-unsplash.jpg" );
+}
+
+.slide-3 {
+  background-image: url("../images/carousel/hammersmith_extension_patio.jpg" );
+}
+
+.slide.slide-4 {
+  background-image: url("../images/clapham_courtyard/courtyard_overview.jpg" );
+  background-position-y: 61%;
+}
+
+.slick-arrow {
+  z-index: 1100;
+}
+
+/* ******* CAROUSEL end   ******* */
+
+/* DESKTOP-specific */
+
+@media (min-width:1025px) {
+/* and (max-device-width: 1600px) */ 
+/* and (-webkit-min-device-pixel-ratio: 1) */
+  /* ******* CAROUSEL start ******* */
+  .carousel .slide {
+    height: 86vh;
+  }
+
+  .carousel img {
+    max-height: 100%;
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+  /* ******* CAROUSEL end   ******* */
+}
